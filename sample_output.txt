@@ -1,0 +1,22 @@
+=== Round 1: withdraw 700 ===
+-- S204 (SavingsAccount) start balance: 900.0
+Withdrawal rejected: minimum balance of 250.0 required.
+Balance after withdraw: 900.0
+Interest applied: 72.0
+Balance after end of month: 972.0
+-- C318 (CurrentAccount) start balance: 400.0
+Account is in overdraft (within limit).
+Balance after withdraw: -300.0
+Maintenance fee deducted: 25.0
+Balance after end of month: -325.0
+
+=== Round 2: withdraw 500 ===
+-- S204 start balance: 972.0
+Balance after withdraw: 472.0
+Interest applied: 37.76
+Balance after end of month: 509.76
+-- C318 start balance: -325.0
+Withdrawal rejected: overdraft limit of 300.0 exceeded.
+Balance after withdraw: -325.0
+Maintenance fee deducted: 25.0
+Balance after end of month: -350.0
